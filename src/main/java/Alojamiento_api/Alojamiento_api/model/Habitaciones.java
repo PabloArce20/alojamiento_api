@@ -1,17 +1,17 @@
 //echo por pablo//
 package Alojamiento_api.Alojamiento_api.model;
 
-public class Habitacion {
+public class Habitaciones {
     private long id;
     private String numero;
     private String tipo;
     private int capacidad;
 
-    public Habitacion(){
+    public Habitaciones(){
 
     }
 
-    public Habitacion(long id, String numero, String tipo, int capacidad) {
+    public Habitaciones(long id, String numero, String tipo, int capacidad) {
         this.id = id;
         this.numero = numero;
         this.tipo = tipo;
