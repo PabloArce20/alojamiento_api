@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alojamiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Visualización de Datos (GET y GET por ID)</h1>
+
+<div class="obtener-por-id">
+    <h2>Obtener Habitación por ID</h2>
+    <label for="habitacion-id">ID Habitación:</label>
+    <input type="number" id="habitacion-id">
+    <button onclick="cargarDatosPorId('habitaciones', document.getElementById('habitacion-id').value, 'habitacion-por-id-tabla')">Obtener Habitación</button>
+    <div id="habitacion-por-id-tabla"></div>
+</div>
+
+<div class="obtener-por-id">
+    <h2>Obtener Persona por ID</h2>
+    <label for="persona-id">ID Persona:</label>
+    <input type="number" id="persona-id">
+    <button onclick="cargarDatosPorId('personas', document.getElementById('persona-id').value, 'persona-por-id-tabla')">Obtener Persona</button>
+    <div id="persona-por-id-tabla"></div>
+</div>
+
+<div class="obtener-por-id">
+    <h2>Obtener Cliente por ID</h2>
+    <label for="cliente-id">ID Cliente:</label>
+    <input type="number" id="cliente-id">
+    <button onclick="cargarDatosPorId('clientes', document.getElementById('cliente-id').value, 'cliente-por-id-tabla')">Obtener Cliente</button>
+    <div id="cliente-por-id-tabla"></div>
+</div>
+
+<hr>
+
+<h1>Lista de todos lo datos</h1>
+
+<div class="seccion">
+    <h2>Habitaciones</h2>
+    <button onclick="cargarDatos('habitaciones')">Cargar Todas las Habitaciones</button>
+    <div id="habitaciones-tabla"></div>
+</div>
+
+<div class="seccion">
+    <h2>Personas</h2>
+    <button onclick="cargarDatos('personas')">Cargar Todas las Personas</button>
+    <div id="personas-tabla"></div>
+</div>
+
+<div class="seccion">
+    <h2>Clientes</h2>
+    <button onclick="cargarDatos('clientes')">Cargar Todos los Clientes</button>
+    <div id="clientes-tabla"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

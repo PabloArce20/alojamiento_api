@@ -1,3 +1,4 @@
+//echo por los 3//
 package Alojamiento_api.Alojamiento_api.controller;
 
 import Alojamiento_api.Alojamiento_api.model.Persona;
@@ -21,7 +22,7 @@ public class PersonaController {
     private Long nextId = 2L;
 
     public PersonaController() {
-        personas.add(new Persona(1L, "Juan Pérez", "juan.perez@example.com"));
+        personas.add(new Persona(1L, "Pablo Leonardo Monasterios Arce", "parce4981@gmail.com"));
     }
 
     @GetMapping
@@ -39,7 +40,7 @@ public class PersonaController {
 
     @PostMapping
     public ResponseEntity<Persona> crearPersona(@RequestBody Persona persona) {
-        if (persona.getNombre() == null || persona.getNombre().trim().isEmpty()) {
+        if (persona.getNombreCompleto() == null || persona.getNombreCompleto().trim().isEmpty()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         if (persona.getEmail() == null || persona.getEmail().trim().isEmpty() || !persona.getEmail().contains("@")) {
@@ -59,7 +60,7 @@ public class PersonaController {
             logger.warn("Persona con ID {} no encontrada para actualizar", id);
             return ResponseEntity.notFound().build();
         }
-        if (personaActualizada.getNombre() == null || personaActualizada.getNombre().trim().isEmpty()) {
+        if (personaActualizada.getNombreCompleto() == null || personaActualizada.getNombreCompleto().trim().isEmpty()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         if (personaActualizada.getEmail() == null || personaActualizada.getEmail().trim().isEmpty() || !personaActualizada.getEmail().contains("@")) {

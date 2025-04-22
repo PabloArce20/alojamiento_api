@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 2rem;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.seccion {
+    margin-bottom: 3rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #ecf0f1;
+}
+
+.error {
+    color: red;
+}
+
+.obtener-por-id {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.obtener-por-id h2 {
+    color: #e67e22;
+}
+
+.obtener-por-id label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.obtener-por-id input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100px;
+}
+
+.obtener-por-id button {
+    background: #e67e22;
+}
+
+.obtener-por-id button:hover {
+    background: #d35400;
+}
+
+#habitacion-por-id-tabla, #persona-por-id-tabla, #cliente-por-id-tabla {
+    margin-top: 1rem;
+}
